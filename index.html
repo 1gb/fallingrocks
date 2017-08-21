@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caution: Falling Rocks</title>
+    <meta name="description" content="Caution: Falling Rocks">
+    <script src="js/aframe.min.js"></script>
+    <script src="js/three.min.js"></script>
+  </head>
+  <body>
+
+    <a-scene>
+      <a-assets>
+        <img id="texture" src="rockytexture.jpg">
+      </a-assets>
+      <a-camera position="0 5 -1.5"></a-camera>
+      <a-cone src="#texture" position="1 0.75 -3" height="10" radius-top="1" radius-bottom="10" segments-radial="10"
+        roughness="2" color="#9b7c65"></a-cone>
+      <a-plane position="0 0 -5" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
+      <a-sky color="#89D3FF"></a-sky>
+    </a-scene>
+  </body>
+
+</html>
