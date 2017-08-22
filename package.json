@@ -1,0 +1,17 @@
+{
+  "name": "fallingrocks",
+  "version": "0.1.0",
+  "description": "Built with [A-Frame](https://aframe.io), a web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms.",
+  "scripts": {
+    "start": "budo --live --verbose --port 3000 --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1gb/fallingrocks.git"
+  },
+  "author": "John Carney <jcarney000@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "budo": "^10.0.4"
+  }
+}
