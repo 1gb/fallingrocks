@@ -15,13 +15,13 @@
         <img id="texture" src="rockytexture.jpg">
       </a-assets>
 
-      <a-camera position="4.5 2.2 14.5" rotation="-11.8 12.7 0"></a-camera>
+      <a-camera position="4.5 2.2 14.5" rotation="-11.8 12.7 0"><a-cursor></a-cursor></a-camera>
       <a-sky color="#89D3FF"></a-sky>
-      <a-plane static-body position="0 0 -5" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"><a-cursor></a-cursor></a-plane>
+      <a-plane static-body position="0 0 -5" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
 
       <a-cone static-body src="#texture" position="1 4.8 -3" height="10" radius-top="1" radius-bottom="10" segments-radial="10"
         roughness="2"></a-cone>
-      <a-dodecahedron dynamic-body position="1.86 10.7 -2" color="#FF926B" radius="0.5" rock></a-dodecahedron>
+      <a-dodecahedron position="1.86 10.7 -2" color="#FF926B" radius="0.5" rock></a-dodecahedron>
 
       <a-entity position="6.4 0 6">
         <a-cylinder position="0 1.4 0" height="3.2" color="brown" radius="0.1"></a-cylinder>
