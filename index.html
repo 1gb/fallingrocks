@@ -9,10 +9,11 @@
     <script src="js/aframe-physics-system.min.js"></script>
   </head>
   <body>
-    
+
     <a-scene>
       <a-assets>
         <img id="texture" src="rockytexture.jpg">
+        <img id="sign" src="sign.png">
       </a-assets>
 
       <a-camera position="4.5 2.2 14.5" rotation="-11.8 12.7 0"><a-cursor></a-cursor></a-camera>
@@ -28,12 +29,21 @@
         <a-sphere position="0 2.5 0" radius="0.8" color="green"></a-sphere>
       </a-entity>
       <a-entity position="-3.3 0 9">
-        <a-cylinder position="0 1.4 0" height="3.2" color="brown" radius="0.1"></a-cylinder>
-        <a-sphere position="0 2.5 0" radius="0.8" color="green"></a-sphere>
+        <a-cylinder position="0 1.4 0" height="3.2" color="brown" radius="0.16"></a-cylinder>
+        <a-cone position="0 3 0" radius-top="0" radius-bottom="0.8" segments-radial="8" color="green"></a-cone>
+        <a-cone position="0 2.5 0" radius-top="0.1" radius-bottom="0.9" segments-radial="8" color="green"></a-cone>
+        <a-cone position="0 2 0" radius-top="0.1" radius-bottom="1" segments-radial="8" color="green"></a-cone>
+        <a-cone position="0 1.5 0" radius-top="0.1" radius-bottom="1.1" segments-radial="8" color="green"></a-cone>
       </a-entity>
       <a-entity position="7 0 10.5">
         <a-cylinder position="0 1.4 0" height="3.2" color="brown" radius="0.1"></a-cylinder>
         <a-sphere position="0 2.5 0" radius="0.8" color="green"></a-sphere>
+      </a-entity>
+
+      <a-entity position="0.445 1.76 11.2">
+        <a-cylinder position="0 0 0" height="3" color="white" radius="0.05"></a-cylinder>
+        <a-plane src="#sign" position="0 0.8 0.1" height="1" width="2"></a-plane>
+        <a-box position="0 0.8 0.04" depth="0.1" height="1" width="2" color="#f7b531"></a-box>
       </a-entity>
 
     </a-scene>
