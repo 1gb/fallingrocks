@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Built with [A-Frame](https://aframe.io), a web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms.",
   "scripts": {
-    "start": "budo --live --verbose --port 3000 --open"
+    "start": "parcel -p 3000 index.html"
   },
   "repository": {
     "type": "git",
@@ -12,6 +12,11 @@
   "author": "John Carney <jcarney000@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "budo": "^10.0.4"
+    "budo": "^10.0.4",
+    "parcel": "^1.9.6"
+  },
+  "dependencies": {
+    "aframe": "^0.8.2",
+    "aframe-physics-system": "^3.1.2"
   }
 }

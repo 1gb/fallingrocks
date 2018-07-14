@@ -1,11 +1,15 @@
 'use strict';
+const aframe = require('aframe');
+require('aframe-physics-system');
 
-AFRAME.registerComponent('rock', {
+aframe.registerComponent('rocktrigger', {
   init: function () {
-    var rock = this.el; 
-    rock.addEventListener('mouseenter', function () {
-      rock.setAttribute('dynamic-body', '');  
+    var trigger = this.el;
+    var rock = document.getElementById('rock');
+
+    trigger.addEventListener('mouseenter', function () {
+      rock.setAttribute('dynamic-body', '');
     });
-  } 
+  }
 });
 
