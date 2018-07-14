@@ -3,10 +3,7 @@
   <head>
     <title>Caution: Falling Rocks</title>
     <meta name="description" content="Caution: Falling Rocks">
-    <script src="js/aframe.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/aframe-physics-system.min.js"></script>
   </head>
   <body>
 
@@ -17,15 +14,15 @@
       </a-assets>
 
       <a-camera position="0.894 0.5 8.037" rotation="30.018 6.168 00"><a-cursor></a-cursor></a-camera>
-      
+
       <a-sky color="#89D3FF"></a-sky>
       <a-plane id="ground" static-body position="0 0 -5" rotation="-90 0 0" width="80" height="80" color="#7BC8A4"></a-plane>
 
       <a-cone id="mountain" static-body src="#mtn_texture" position="0 10 -3" height="20" radius-top="1" radius-bottom="10" segments-radial="10"
         roughness="2" rotation="0 -12 0"></a-cone>
-        
 
-      <a-dodecahedron id="rock" rotation="90 0 0" position="0.204 21.382 -1.850" radius="0.5" rock="" scale="2 2 2" material="color:#65623a" rock></a-dodecahedron>
+
+      <a-dodecahedron id="rock" rotation="90 0 0" position="0.204 21.382 -1.850" radius="0.5" scale="2 2 2" material="color:#65623a" rock></a-dodecahedron>
 
       <!-- mountain texturing -->
       <a-dodecahedron id="mtnBump" static-body="sphereRadius:NaN" src="#mtn_texture" position="-2.951 12.555 -0.855" radius="0.5" scale="2 4 2" quaternion="-0.174 0 0 0.985" velocity=""></a-dodecahedron>
