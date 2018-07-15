@@ -13,7 +13,7 @@
         <img id="sign" src="sign.png">
       </a-assets>
 
-      <a-camera position="0.894 0.5 8.037" rotation="30.018 6.168 00"><a-cursor></a-cursor></a-camera>
+      <a-camera position="0.894 -1 10.037" rotation="30.018 6.168 00"><a-cursor></a-cursor></a-camera>
 
       <a-sky color="#89D3FF"></a-sky>
       <a-plane id="ground" static-body position="0 0 -5" rotation="-90 0 0" width="80" height="80" color="#7BC8A4"></a-plane>
@@ -31,7 +31,14 @@
       <a-dodecahedron id="mtnBump-3" static-body="sphereRadius:NaN" src="#mtn_texture" position="-2.951 4.897 3.301" radius="0.5" scale="2 4 2" quaternion="0 0 0 1" velocity="" rotation="0 0 -25"></a-dodecahedron>
       <a-dodecahedron id="mtnBump-4" static-body="sphereRadius:NaN" src="#mtn_texture" position="1.112 18.051 -2.219" radius="0.5" scale="1.5 2.3 2" quaternion="0 0 0 1" velocity="" rotation="-90 -90 -90"></a-dodecahedron>
       <a-dodecahedron id="mtnBump-5" static-body="sphereRadius:NaN" src="#mtn_texture" position="-4.596 6.993 1.115" radius="0.5" scale="2 3.5 2" quaternion="-0.374 0.192 0.08 0.904" velocity="" rotation="0 0 -35"></a-dodecahedron>
-      <a-dodecahedron id="mtnBump-6" static-body="sphereRadius:NaN" src="#mtn_texture" position="-1.432 3.272 4.418" radius="0.5" scale="2 3.5 3" quaternion="-0.09 0.287 -0.287 0.91" velocity=""></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-6" static-body="sphereRadius:NaN" src="#mtn_texture" position="-1.432 3.272 4.816" radius="0.5" scale="1.5 2.5 3" quaternion="0 0 0 1" velocity="" rotation="-45 90 0"></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-7" static-body="sphereRadius:NaN" src="#mtn_texture" position="1.219 0.149 5.6" radius="0.5" scale="2 7 4.5" quaternion="0.123 0.123 0.696 0.696" velocity="" rotation="0 0 90"></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-8" static-body="sphereRadius:NaN" src="#mtn_texture" position="-6.107 0.619 2.661" radius="0.5" scale="2.2 7 6" quaternion="0 0 0 1" velocity="" rotation="30 -50 90"></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-9" static-body="sphereRadius:NaN" src="#mtn_texture" position="-1.714 0.208 5.473" radius="0.5" scale="2.5 4 3" quaternion="-0.107 -0.812 0.075 0.569" velocity="" rotation="0 35 90"></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-10" static-body="sphereRadius:NaN" src="#mtn_texture" position="3.639 0.001 7.861" radius="0.5" scale="0.6 0.5 0.6" quaternion="-0.133 0.633 0.112 0.754" velocity=""></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-11" static-body="sphereRadius:NaN" src="#mtn_texture" position="2.616 1.064 6.613" radius="0.5" scale="0.7 0.6 0.5" quaternion="0 0 0 1" velocity="" rotation="56 20 0"></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-12" static-body="sphereRadius:NaN" src="#mtn_texture" position="-0.504 18.872 -2.357" radius="0.5" scale="2 2.4 2.5" quaternion="0 0 0 1" velocity="" rotation="45 45 0"></a-dodecahedron>
+      <a-dodecahedron id="mtnBump-13" static-body="sphereRadius:NaN" src="#mtn_texture" position="0.224 15.22 -0.466" radius="0.5" scale="2.5 4.7 2" quaternion="0 0 -0.301 0.954" velocity="" rotation="-18 -35 0"></a-dodecahedron>
 
       <a-entity id="treeCone1" position="-3.3 0 9">
         <a-cylinder position="0 1.4 0" height="3.2" color="brown" radius="0.16"></a-cylinder>
@@ -55,10 +62,15 @@
         <a-cone position="0 1.5 0" radius-top="0.1" radius-bottom="1.1" segments-radial="8" color="green"></a-cone>
       </a-entity>
       
-      <a-entity id="sign" position="-0.844 1.405 8.096" rotation="0 15 15">
+      <!-- <a-entity id="sign" position="-0.844 1.405 8.096" rotation="0 15 15">
               <a-cylinder height="3" color="white" radius="0.05"></a-cylinder>
               <a-plane src="#sign" position="0 0.8 0.1" height="1" width="2"></a-plane>
               <a-box position="0 0.8 0.04" depth="0.1" height="1" width="2" color="#f7b531"></a-box>
+      </a-entity> -->
+      <a-entity id="sign" position="-0.772 1.32 6.71" rotation="0 15 15" scale="0.75 0.75 0.75">
+                    <a-cylinder height="3" color="white" radius="0.05"></a-cylinder>
+                    <a-plane src="#sign" position="0 0.8 0.1" height="1" width="2"></a-plane>
+                    <a-box position="0 0.8 0.04" depth="0.1" height="1" width="2" color="#f7b531"></a-box>
       </a-entity>
 
     </a-scene>
