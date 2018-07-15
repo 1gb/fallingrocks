@@ -10,7 +10,7 @@ AFRAME.registerComponent(
       var trigger = this.el;
       var rock = document.getElementById('rock');
       trigger.addEventListener('mouseenter', function () {
-        rock.setAttribute('dynamic-body', '');
+        rock.setAttribute('dynamic-body', 'shape: sphere');
       });
     }
   }
